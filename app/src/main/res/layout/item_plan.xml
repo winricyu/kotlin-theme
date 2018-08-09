@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="16dp"
+    tools:background="@color/major_blue">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rec_white_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_day">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/transparent_white_100"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="【動漫巴士專車一日遊】藤子・F・不二雄博物館・鬼太郎茶屋・狹山公園・多摩湖" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/transparent_white_100"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="may"
+        android:textAllCaps="true"
+        android:textColor="@color/major_blue"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_month3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/transparent_white_100"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="may"
+        android:textAllCaps="true"
+        android:textColor="@color/major_blue"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txt_month"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_blue_white_stroke"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="07"
+        android:textAllCaps="true"
+        android:textColor="@color/transparent_white_100"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_month"
+        app:layout_constraintStart_toStartOf="@+id/txt_month"
+        app:layout_constraintTop_toBottomOf="@+id/txt_month" />
+
+    <TextView
+        android:id="@+id/txt_day3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_blue_white_stroke"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:text="29"
+        android:textAllCaps="true"
+        android:textColor="@color/transparent_white_100"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_month3"
+        app:layout_constraintStart_toStartOf="@+id/txt_month3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_month3" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:isIndicator="false"
+        android:max="5"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/transparent_white_20"
+        android:progressTint="@color/transparent_white_100"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/txt_month3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:rating="3.5" />
+
+</android.support.constraint.ConstraintLayout>
